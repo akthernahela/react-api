@@ -7,8 +7,7 @@ export default function Main() {
     const actressList = 'https://lanciweb.github.io/demo/api/actresses/'
     const actorList = 'https://lanciweb.github.io/demo/api/actors/'
     function printPicsActress() {
-        axios
-            .get(actressList)
+        axios.get(actressList)
             .then(response => {
                 console.log(response.data);
                 setactress(response.data)
@@ -22,8 +21,7 @@ export default function Main() {
     }, []);
 
     function printPicsActor() {
-        axios
-            .get(actorList)
+        axios.get(actorList)
             .then(response => {
                 console.log(response.data);
                 setactor(response.data)
@@ -44,7 +42,7 @@ export default function Main() {
                 <div className="container">
                     {
                         allActors.map(person => {
-                            <div className="card mb-3" style="max-width: 540px;">
+                            <div className="card mb-3" key={person.id}>
                                 <div className="row g-0">
                                     <div className="col-md-4">
                                         <img src={person.image} className="img-fluid rounded-start" alt="..." />
