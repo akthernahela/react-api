@@ -10,13 +10,15 @@ export default function Main() {
             .get(actressList)
             .then(response => {
                 console.log(response.data.results);
-
+                setactress(response.data.results);
+            }).catch(err => {
+                console.error(err.message);
             })
     }
     return (
         <>
             <main>
-
+                <div></div>
             </main>
         </>
     )
