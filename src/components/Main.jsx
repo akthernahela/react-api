@@ -15,9 +15,11 @@ export default function Main() {
                 console.error(err.message);
             })
     }
+
     useEffect(() => {
         printPics()
-    }, [])
+    }, []);
+
     return (
         <>
             <main>
