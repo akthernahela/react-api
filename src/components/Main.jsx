@@ -9,8 +9,8 @@ export default function Main() {
         axios
             .get(actressList)
             .then(response => {
-                console.log(response.data.results);
-                setactress(response.data.results);
+                console.log(response.data);
+                setactress(response.data)
             }).catch(err => {
                 console.error(err.message);
             })
@@ -19,7 +19,6 @@ export default function Main() {
     useEffect(() => {
         printPics()
     }, []);
-
     return (
         <>
             <main>
