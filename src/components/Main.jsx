@@ -38,7 +38,7 @@ export default function Main() {
     return (
         <>
             <main>
-                <div></div>
+                <h1>Attrici ed Attori</h1>
             </main>
         </>
     )
