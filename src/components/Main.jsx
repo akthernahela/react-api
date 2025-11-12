@@ -54,7 +54,7 @@ export default function Main() {
                                             <h5 className="card-title">{person.name}</h5>
                                             <p className="card-text"><small className="text-body-secondary">{person.birth_year}</small></p>
                                             <p className="card-text"><small className="text-body-secondary">{person.nationality}</small></p>
-                                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <p className="card-text">{person.biography}</p>
                                             <p className="card-text"><small className="text-body-secondary">{person.awards}</small></p>
                                         </div>
                                     </div>
