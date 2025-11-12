@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export default function Main() {
-    const [actress, setactress] = useState([])
+    const [actress, setactress] = useState([]);
+    const [actor, setactor] = useState([])
     const actressList = 'https://lanciweb.github.io/demo/api/actresses/'
-    //const actorList = 'https://lanciweb.github.io/demo/api/actors/'
-    function printPics() {
+    const actorList = 'https://lanciweb.github.io/demo/api/actors/'
+    function printPicsActress() {
         axios
             .get(actressList)
             .then(response => {
@@ -17,7 +18,7 @@ export default function Main() {
     }
 
     useEffect(() => {
-        printPics()
+        printPicsActress()
     }, []);
     return (
         <>
