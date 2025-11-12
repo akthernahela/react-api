@@ -1,11 +1,10 @@
-import { useState } from 'react'
-import axios from 'axios'
+import Main from './components/Main'
 
 function App() {
 
   return (
     <>
-
+      <Main />
     </>
   )
 }
