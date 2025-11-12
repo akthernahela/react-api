@@ -42,7 +42,7 @@ export default function Main() {
                 <div className="container">
                     {
                         allActors.map((person, index) => (
-                            <div className="card mb-3" key={person.id}>
+                            <div className="card mb-3" key={`${person.name} ${index}`}>
                                 <div className="row g-0">
                                     <div className="col-md-4">
                                         <img src={person.image} className="img-fluid rounded-start" alt="..." />
