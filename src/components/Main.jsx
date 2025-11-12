@@ -33,7 +33,7 @@ export default function Main() {
     useEffect(() => {
         printPicsActor()
     }, []);
-    const allActors = actress.concat(actor);
+    const allActors = [...actress, ...actor];
 
     return (
         <>
