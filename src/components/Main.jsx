@@ -41,7 +41,7 @@ export default function Main() {
                 <h1>Attrici ed Attori</h1>
                 <div className="container">
                     {
-                        allActors.map(person => {
+                        allActors.map(person => (
                             <div className="card mb-3" key={person.id}>
                                 <div className="row g-0">
                                     <div className="col-md-4">
@@ -58,7 +58,7 @@ export default function Main() {
                                     </div>
                                 </div>
                             </div>
-                        })
+                        ))
                     }
                 </div>
             </main>
