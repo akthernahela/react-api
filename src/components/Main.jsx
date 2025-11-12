@@ -39,6 +39,9 @@ export default function Main() {
         <>
             <main>
                 <h1>Attrici ed Attori</h1>
+                <div className="container">
+                    <div className="card"></div>
+                </div>
             </main>
         </>
     )
