@@ -20,6 +20,21 @@ export default function Main() {
     useEffect(() => {
         printPicsActress()
     }, []);
+
+    function printPicsActor() {
+        axios
+            .get(actorList)
+            .then(response => {
+                console.log(response.data);
+                setactor(response.data)
+            }).catch(err => {
+                console.error(err.message);
+            })
+    }
+
+    useEffect(() => {
+        printPicsActor()
+    }, []);
     return (
         <>
             <main>
